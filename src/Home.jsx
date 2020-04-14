@@ -99,7 +99,7 @@ const Menu = styled.div`
     right: 80%;
   }
   .title {
-    min-height: 200px;
+    min-height: 250px;
   }
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
@@ -124,12 +124,19 @@ class Home extends Component {
           <div
             className="title"
             style={{
-              fontSize: "30px",
-              textAlign: "center",
-              paddingTop: "30px",
+              fontSize: "25px",
+              fontWeight: "bold",
+              padding: "20px",
             }}
           >
-            Full-Stack Developer
+            Yangoh Kim
+            <h3
+              style={{
+                textAlign: "center",
+              }}
+            >
+              Full Stack Developer
+            </h3>
           </div>
           <div
             style={{
@@ -139,7 +146,6 @@ class Home extends Component {
               padding: "10px",
             }}
           >
-            <div>Yangoh Kim</div>
             <div>yelgon36@gmail.com</div>
             <div>438-926-2922</div>
           </div>

@@ -4,7 +4,6 @@ import Home from "./Home.jsx";
 import Project from "./Project.jsx";
 import Experience from "./Experience.jsx";
 import Education from "./Education.jsx";
-import Contact from "./Contact.jsx";
 
 class App extends Component {
   renderHome = () => {
@@ -19,9 +18,7 @@ class App extends Component {
   renderEducation = () => {
     return <Education />;
   };
-  renderContact = () => {
-    return <Contact />;
-  };
+
   render() {
     return (
       <BrowserRouter>
@@ -34,7 +31,6 @@ class App extends Component {
             render={this.renderExperience}
           />
           <Route exact={true} path="/education" render={this.renderEducation} />
-          <Route exact={true} path="/contact" render={this.renderContact} />
         </div>
       </BrowserRouter>
     );
