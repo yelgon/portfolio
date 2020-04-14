@@ -44,14 +44,14 @@ class Education extends Component {
         </div>
         <h4 className="year">2019.09~2020.04</h4>
         <div className="university">
-          <img src="concordia.png"></img>
+          <img src="concordia.jpg"></img>
           <h3>Concordia University</h3>
           <h4>Coding bootcamp</h4>
         </div>
 
         <h4 className="year">2017.01~2019.08</h4>
         <div className="university">
-          <img src="Korea cyber logo.png"></img>
+          <img src="Korea cyber logo.jpg"></img>
           <h3>Korea Cyber University</h3>
           <h4>Bachelor of Software Engineering</h4>
         </div>
