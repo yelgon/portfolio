@@ -50,7 +50,7 @@ class Education extends Component {
         <Box>
           <div className="university">
             <h4 className="year">2019.09~2020.04</h4>
-            <img src="concordia.jpg"></img>
+            <img src="conco.jpg"></img>
             <h3>Concordia University</h3>
             <h4>Coding bootcamp</h4>
           </div>
