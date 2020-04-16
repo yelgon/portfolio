@@ -20,3 +20,7 @@ const { PORT = 4000, LOCAL_ADDRESS = "0.0.0.0" } = process.env;
 app.listen(PORT, LOCAL_ADDRESS, () => {
   console.log("app running on port" + PORT);
 });
+
+// app.listen(4000, "0.0.0.0", () => {
+//   console.log("Server running on port 4000");
+// });
