@@ -10,22 +10,44 @@ const Wrapper = styled.div`
     height: 65px;
   }
   .home {
-    position: absolute;
     color: #e42c64;
-    bottom: 0;
-    right: 0;
-    padding: 20px;
+    top: 10px;
+    padding: 10px;
     font-size: 30px;
     text-decoration: none;
-    font-family: cursive;
   }
   .university {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    border: 2px solid black;
-    border-radius: 2em;
+    border: 4px solid #f2317f;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 4px;
+      background: white;
+      transform: skewX(50deg);
+      transition: 0.4s linear;
+    }
+
+    &::before {
+      top: -4px;
+      left: 10%;
+    }
+    &::after {
+      bottom: -4px;
+      right: 10%;
+    }
+    &:hover::before {
+      left: 80%;
+    }
+    &:hover::after {
+      right: 80%;
+    }
   }
   .year {
     margin-top: 0;
@@ -37,6 +59,10 @@ const Box = styled.div`
   grid-template-columns: auto auto;
   margin: 30px;
   grid-gap: 30px;
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `;
 class Education extends Component {
   render() {

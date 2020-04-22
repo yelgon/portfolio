@@ -5,34 +5,88 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   position: relative;
   min-height: 100vh;
-  background: #bbded6;
   color: black;
 
-  div {
-    padding: 5px;
-  }
   .home {
-    position: absolute;
-    color: #e42c64;
-    bottom: 0;
-    right: 0;
-    padding: 20px;
+    color: #fbc723;
+    top: 10px;
+    padding: 10px;
     font-size: 30px;
     text-decoration: none;
-    font-family: cursive;
   }
 `;
 const Box = styled.div`
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: white;
+    transform: skewX(50deg);
+    transition: 0.4s linear;
+  }
+
+  &::before {
+    top: -4px;
+    left: 10%;
+  }
+  &::after {
+    bottom: -4px;
+    right: 10%;
+  }
+  &:hover::before {
+    left: 80%;
+  }
+  &:hover::after {
+    right: 80%;
+  }
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   row-gap: 10px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   align-items: center;
+  border: 5px solid #fbc723;
+  .contents1 {
+    margin-left: 10px;
+    div {
+      padding: 5px;
+    }
+  }
 `;
 const Box2 = styled.div`
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: white;
+    transform: skewX(50deg);
+    transition: 0.4s linear;
+  }
+
+  &::before {
+    top: -4px;
+    left: 10%;
+  }
+  &::after {
+    bottom: -4px;
+    right: 10%;
+  }
+  &:hover::before {
+    left: 80%;
+  }
+  &:hover::after {
+    right: 80%;
+  }
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   row-gap: 10px;
@@ -40,6 +94,13 @@ const Box2 = styled.div`
   margin-right: 50px;
   align-items: center;
   justify-items: right;
+  border: 5px solid #fbc723;
+  .contents2 {
+    margin-left: 10px;
+    div {
+      padding: 5px;
+    }
+  }
 `;
 
 class Project extends Component {
