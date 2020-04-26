@@ -6,9 +6,12 @@ const Wrapper = styled.div`
   position: relative;
   min-height: 100vh;
   color: black;
+  img {
+    height: 50px;
+  }
 
   .home {
-    color: #fbc723;
+    color: #037365;
     top: 10px;
     padding: 10px;
     font-size: 30px;
@@ -51,7 +54,7 @@ const Box = styled.div`
   margin-bottom: 10px;
   margin-top: 10px;
   align-items: center;
-  border: 5px solid #fbc723;
+  border: 5px solid #037365;
   .contents1 {
     margin-left: 10px;
     div {
@@ -94,7 +97,7 @@ const Box2 = styled.div`
   margin-right: 50px;
   align-items: center;
   justify-items: right;
-  border: 5px solid #fbc723;
+  border: 5px solid #037365;
   .contents2 {
     margin-left: 10px;
     div {
@@ -108,7 +111,7 @@ class Project extends Component {
     return (
       <Wrapper>
         <Link to="/" className="home">
-          Home
+          <img src="homeIcon.png" />
         </Link>
         <Box>
           <div className="video1">

@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     margin: 10px;
   }
   img {
-    height: 65px;
+    height: 50px;
   }
   .home {
     color: #e42c64;
@@ -70,7 +70,7 @@ class Education extends Component {
       <Wrapper>
         <div>
           <Link to="/" className="home">
-            Home
+            <img src="homeIcon.png" />
           </Link>
         </div>
         <Box>

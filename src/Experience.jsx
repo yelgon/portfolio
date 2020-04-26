@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   img {
-    height: 100px;
+    height: 50px;
   }
   .home {
     color: #20366b;
@@ -64,7 +64,7 @@ class Experience extends Component {
       <Wrapper>
         <div>
           <Link to="/" className="home">
-            Home
+            <img src="homeIcon.png" />
           </Link>
         </div>
         <div className="work">
